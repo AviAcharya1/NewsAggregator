@@ -2,6 +2,10 @@
 
 The News Aggregator is a web application that allows users to browse and read news articles from various sources and categories. It fetches real-time news data from a third-party API and displays it in a user-friendly interface.
 
+## Project is live at :
+
+- https://aviacharya1.github.io/NewsAggregator/
+
 ## Features
 
 - Browse news articles by different categories (e.g., general, technology, business, sports, entertainment)
