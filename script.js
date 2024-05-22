@@ -1,5 +1,5 @@
 // Replace 'YOUR_API_KEY' with your actual API key
-const apiKey = '9ec30827116543edb1f1ec942c265272';
+const apiKey = 'YOUR_API_KEY';
 const newsContainer = document.querySelector('.news-container');
 const navLinks = document.querySelectorAll('nav a');
 
