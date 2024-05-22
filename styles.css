@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgb(16, 41, 58), rgb(22, 19, 19));
+    color: white;
+  }
+  
+  header {
+    background:linear-gradient(rgb(136, 207, 231),rgb(50, 110, 148));
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  header h1{
+    text-transform: uppercase;
+    text-shadow: 0 10px 15px rgba(27, 26, 26, 0.864);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px white;
+    /* border: 1px solid whitesmoke; */
+}
+
+nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+nav a:hover{
+    color:#d9d1e584;
+    transform: scale(1.5);
+    /* background: rgba(255, 255, 255, 0.249); */
+    transition: 1.2s ease-in-out;
+  }
+  
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-article {
+    /* border: 1px solid #ccc; */
+    margin: 0.5rem;
+    padding: 15px;
+    background: rgb(12, 12, 11);
+    color:white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px white;
+  }
+  
+  .news-article img {
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background:linear-gradient(rgb(50, 110, 148),rgb(136, 207, 231));
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  /* Media queries for responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    nav ul li:hover{
+        transform: scale(1.05);
+        transition: 1.2s;
+    }
+    
+    nav ul li{
+        margin: 10px;
+
+    }
+  
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+    .news-article:hover{
+        transform: scale(1.05);
+        transition: 1.2s;
+        
+    }
+  }
